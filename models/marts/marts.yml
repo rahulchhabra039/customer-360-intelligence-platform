@@ -1,0 +1,43 @@
+version: 2
+
+models:
+  - name: dim_customers
+    description: Customer dimension containing CRM profile and acquisition attributes.
+    columns:
+      - name: customer_id
+        description: Unique customer identifier.
+        data_tests:
+          - not_null
+          - unique
+
+  - name: fct_sales_orders
+    description: Order-level sales fact table including identified and guest orders.
+    columns:
+      - name: order_id
+        description: Unique order identifier.
+        data_tests:
+          - not_null
+          - unique
+      - name: customer_id
+        description: Customer identifier; null for guest or unmatched orders.
+
+  - name: fct_ga4_events
+    description: GA4 event-level fact view containing customer behaviour and purchase activity.
+    columns:
+      - name: event_name
+        description: GA4 event name.
+        data_tests:
+          - not_null
+      - name: event_timestamp
+        description: Timestamp when the event occurred.
+        data_tests:
+          - not_null
+
+  - name: mart_customer_360
+    description: Unified customer-level mart combining CRM, GA4 behaviour and sales metrics.
+    columns:
+      - name: customer_id
+        description: Unique customer identifier.
+        data_tests:
+          - not_null
+          - unique
