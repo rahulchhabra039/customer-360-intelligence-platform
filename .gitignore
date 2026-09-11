@@ -1,6 +1,25 @@
-# you shouldn't commit these into source control
-# these are the default directory names, adjust/add to fit your needs
+# dbt generated files
 target/
 dbt_packages/
 logs/
 dbt_internal_packages/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Credentials and private configuration
+.env
+.env.*
+profiles.yml
+*service-account*.json
+*service_account*.json
+credentials*.json
+
+# Editor and operating-system files
+.vscode/
+.DS_Store
+Thumbs.db

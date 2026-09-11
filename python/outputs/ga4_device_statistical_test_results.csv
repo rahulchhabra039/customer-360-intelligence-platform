@@ -1,0 +1,9 @@
+Metric,Result
+Mobile conversion rate,46.17%
+Desktop conversion rate,44.95%
+Difference (mobile - desktop),1.22%
+Z-statistic,1.174
+P-value,0.2403
+95% CI lower,-0.82%
+95% CI upper,3.26%
+Statistically significant,No

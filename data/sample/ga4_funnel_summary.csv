@@ -1,0 +1,5 @@
+stage_order,funnel_stage,users
+1,view_item,61252
+2,add_to_cart,12545
+3,begin_checkout,9715
+4,purchase,4419

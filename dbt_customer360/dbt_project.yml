@@ -1,0 +1,20 @@
+name: "customer_360_intelligence_platform"
+version: "1.0.0"
+config-version: 2
+
+profile: "default"
+
+model-paths: ["models"]
+
+target-path: "target"
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  customer_360_intelligence_platform:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
