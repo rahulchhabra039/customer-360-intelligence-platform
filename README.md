@@ -16,7 +16,17 @@ The workbook contains three dashboard pages:
 2. Customer & Sales Insights
 3. Digital Funnel & Conversion
 
+### Executive Overview
+
 ![Executive Overview](tableau/screenshots/01_Executive_Overview.png)
+
+### Customer & Sales Insights
+
+![Customer & Sales Insights](tableau/screenshots/02_Customer_Sales_Insights.png)
+
+### Digital Funnel & Conversion
+
+![Digital Funnel & Conversion](tableau/screenshots/03_Digital_Funnel_Conversion.png)
 
 ## Business Questions
 
